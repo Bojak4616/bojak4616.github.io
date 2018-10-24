@@ -1,1 +1,61 @@
-HelloWorld
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <title>Matt Sound Board</title>
+  </head>
+  <body class="bg-dark">
+    <h1 class="text-light text-center">Matt Sound Board</h1>
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-12 text-center">
+                <button class="btn btn-lg btn-secondary">Addicted</button>
+                <button class="btn btn-lg btn-secondary offset-md-1">chuckle1</button>
+                <button class="btn btn-lg btn-secondary offset-md-1">FireWallGuy</button>
+                <button class="btn btn-lg btn-secondary offset-md-1">FuckMe</button>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-12 text-center">
+                <button class="btn btn-lg btn-secondary">mmfff</button>
+                <button class="btn btn-lg btn-secondary offset-md-1">moan1</button>
+                <button class="btn btn-lg btn-secondary offset-md-1">Mondernizer</button>
+                <button class="btn btn-lg btn-secondary offset-md-1">Noob</button>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-12 text-center">
+                <button class="btn btn-lg btn-secondary">SettleDownBud</button>
+                <button class="btn btn-lg btn-secondary offset-md-1">SockSalesman</button>
+                <button class="btn btn-lg btn-secondary offset-md-1">TellMeMore</button>
+                <button class="btn btn-lg btn-secondary offset-md-1">Thinking1</button>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-12 text-center">
+                <button class="btn btn-lg btn-secondary">yeash1</button>
+                <button class="btn btn-lg btn-secondary offset-md-1">yeash2</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script>
+        $('button').click(function(){
+            var snd = new Audio(`${$(this).text()}.mp3`);
+            snd.play();
+            snd.currentTime=0;
+        });
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
